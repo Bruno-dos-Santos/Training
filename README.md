@@ -1,2 +1,2 @@
-# IGTI
-IGTI Courses
+# Training
+Training Courses
