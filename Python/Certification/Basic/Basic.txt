@@ -1,0 +1,134 @@
+Python Basic
+
+String
+.lower()
+.upper()
+.isUpper()
+isLower()
+len()
+.index()
+.replace()
+
+Numbers
++ somar
+-subtrair 
+/ dividir
+*multiplicar 
+** exponentiation (elevado)
+// floor division (retorna a division inteira sempre) 10//3=3
+% mod (10% 3 retorna 1) % retorna o retorno da divisão
+abs() retorna o valor absoluto da variable (-1) retorna 1
+pow() retorna o valor elevado, pow(3,2)=9
+max() retorna o maior número dos números enviados.
+min() retorna o minimo dos números enviados
+round() arredonda o número
+
+math module   
+ceil(3.7) arredonda o número pra cima 
+sqrt(36) raiz quadrada 
+floor(3.7) arredonda pra baixo o número
+
+Converse de variaveis 
+str() converte para string
+int() converte para int 
+float() converte para float()
+ 
+Basic inputs  -> input()
+
+Lists  = []
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+print(friends)
+print(friends[-2])
+# Slices
+print(friends[1:]) # from 1 onwards
+print(friends[1:3]) # from 1 onwards to and not 3
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+lucky_numbers = [4,8,15,16,23,42]
+friends.extend(lucky_numbers) # add one list to another.
+friends.append("New")  #adiciona um elemento ao final da lista
+friends.insert(1, "Kelly") #insere o elemento na posiçao x empurrando os outros pra frente
+friends.remove("Jim") #remove um elemento da lista
+friends.pop() #remove o último elemento da lista
+friends.clear() #limpa completamente a lista
+friends.index("Kevin") #retorna o index do Kevin
+friends.count("Jim") #conta quantas vezes o elemento está na lista.
+friends.sort() #ordena a lista em ordem alfabetica 
+friends.reverse() #inverte a ordem da lista
+new_friends = friends.copy() #copia a lista para a nova lista
+
+Tuple = ()  imutaveis 
+coordinates = (4, 5)
+print(coordinates[1]) = 5
+
+Functions
+def sayhi():
+    print("Hello User")
+
+def say_hi(name):
+    print("Hello user " + name)
+
+def say_hi(name, age):
+    print("Hello user " + name + " age " + age)
+say_hi("Mike", "35")
+
+ Return statement 
+
+def cube(num):
+    return num*num*num
+print(cube(3))
+
+
+If statement
+if: 
+elif:
+else:
+
+Operator
+or Ou
+and E
+not
+>= maior ou igual
+<= menor ou igual
+> maior
+< menor
+== igual
+!= diferente
+
+Dictionaries (key/value pair)
+  monthConversions = {
+    "Jan" : "January",
+    "Feb" : "February",
+    "Mar" : "March",
+    "Apr" : "April",
+    "May" : "May",
+    "Jun" : "June",
+    "Jul" : "July",
+    "Aug" : "August",
+    "Sep" : "September",
+    "Oct" : "October",
+    "Nov" : "November",
+    "Dec" : "December"
+}
+
+print(monthConversions["Feb"])
+print(monthConversions.get("Dec"))
+print(monthConversions.get("Luv", "not a valid key")) #return a default value if the key not found
+
+ 
+While loop
+i = 1
+while i <= 10:
+    print(i, end=" ")
+    i += 1
+print("\ndone with loop")
+
+
+for loop 
+for letter in "Giraffe Academy":
+    print(letter)
+friends = ["Jim", "Karen", "Kevin"]
+for friend in friends:
+    print(friend)
+for i in range(3,10):
+    print(i)
+
